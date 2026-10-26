@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>controle</title>
+</head>
+<body>
+<h1>Controle LG</h1>
+<button>conectar</button>
+<!--botoes-->
+<div>
+    <p>Volume</p>
+    <button onclick="enviarAPI('/volume/up')">+</button>
+    <button onclick="enviarAPI('/volume/down')">-</button>
+    <button onclick="enviarAPI('/volume/mute')">MUDO</button>
+</div>
+<div>
+    <p>Direcoes</p>
+    <button onclick="enviarAPI('/setas/up')">^</button>
+    <button onclick="enviarAPI('/setas/down')">v</button>
+    <button onclick="enviarAPI('/setas/left')"><</button>
+    <button onclick="enviarAPI('/setas/right')">></button>
+</div>
+<div>
+    <p>Apps</p>
+    <button onclick="enviarAPI('/apps/home')">HOME</button>
+    <button onclick="enviarAPI('/apps/netflix')">Netflix</button>
+    <button onclick="enviarAPI('/apps/youtube')">YouTube</button>
+</div>
+<div>
+    <p>Acoes</p>
+    <button onclick="enviarAPI('/acoes/voltar')">BACK</button>
+    <button onclick="enviarAPI('/acoes/ok')">OK</button>
+    <button onclick="enviarAPI('/acoes/desligar')">DESLIGAR</button></div>
+<script src="../static/script.js"></script>
+</body>
+</html>
